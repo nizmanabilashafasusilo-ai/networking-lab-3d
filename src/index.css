@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #070c18;
+    background-image: 
+      radial-gradient(circle at 50% 0%, #101c36 0%, #070c18 65%),
+      linear-gradient(to right, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+    background-size: 100% 100%, 48px 48px, 48px 48px;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #091124;
+}
+::-webkit-scrollbar-thumb {
+  background: #263962;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* High-contrast cyber card */
+.cyber-card {
+  background: linear-gradient(145deg, #101a33 0%, #0d152a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  border-top-color: rgba(56, 189, 248, 0.55);
+  box-shadow: 
+    0 12px 36px -8px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(14, 165, 233, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.cyber-card:hover {
+  border-color: rgba(6, 182, 212, 0.65);
+  box-shadow: 
+    0 16px 40px -8px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(6, 182, 212, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Elevated inner sub-card */
+.cyber-subcard {
+  background: #14203a;
+  border: 1px solid rgba(71, 85, 105, 0.45);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.cyber-subcard:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+/* High contrast tech grid background */
+.tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+}
